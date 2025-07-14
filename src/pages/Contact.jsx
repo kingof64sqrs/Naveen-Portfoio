@@ -26,13 +26,13 @@ const socialLinks = [
   {
     icon: Github,
     name: 'GitHub',
-    url: 'https://github.com/your-github', // Replace with actual username if available
+    url: 'https://github.com/NaveenKumarThirugnanam', // Replace with actual username if available
     color: 'hover:text-red-500',
   },
   {
     icon: Linkedin,
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/your-linkedin', // Replace with actual profile if available
+    url: 'https://www.linkedin.com/in/naveen-kumar-thirugnanam-7a7618257/?original_referer=', // Replace with actual profile if available
     color: 'hover:text-red-500',
   },
 ];

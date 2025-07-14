@@ -148,8 +148,8 @@ const About = () => {
               {/* Avatar */}
               <div className="relative z-10 w-48 h-48 rounded-2xl overflow-hidden glass-card shadow-xl mx-auto">
                 <motion.img
-                  src="/src/image/ChatGPT Image Jun 18, 2025, 02_30_10 PM.png"
-                  alt="Naveen Kumar T"
+                  src="/ChatGPT Image Jun 18, 2025, 02_30_10 PM.png"
+                  alt="Profile"
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}

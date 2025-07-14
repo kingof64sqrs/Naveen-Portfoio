@@ -231,7 +231,7 @@ const Loader = ({ isLoading, onComplete }) => {
                   className="w-20 h-20 bg-gradient-to-br from-accent-red via-white to-accent-red rounded-2xl flex items-center justify-center overflow-hidden"
                 >
                   <motion.img
-                    src="/src/image/ChatGPT Image Jun 18, 2025, 02_30_10 PM.png"
+                    src="/ChatGPT Image Jun 18, 2025, 02_30_10 PM.png"
                     alt="Naveen Kumar T"
                     className="w-full h-full object-cover rounded-2xl"
                     whileHover={{ scale: 1.05 }}
