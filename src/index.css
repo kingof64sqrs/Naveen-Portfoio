@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-dark-border;
+  }
+  
+  body {
+    @apply font-inter bg-dark-bg text-white antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    cursor: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-dark-card/50 backdrop-blur-md border border-dark-border/50 rounded-xl;
+  }
+  
+  .terminal-card {
+    @apply bg-dark-card/80 backdrop-blur-md border border-dark-border/50 rounded-xl shadow-lg;
+    background: linear-gradient(135deg, rgba(24, 24, 24, 0.8) 0%, rgba(24, 24, 24, 0.6) 100%);
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-red to-white bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-accent-red hover:bg-white text-white hover:text-accent-red font-semibold rounded-lg transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 border border-accent-red text-accent-red hover:bg-accent-red hover:text-white font-semibold rounded-lg transition-all duration-300;
+  }
+  
+  .terminal-btn {
+    @apply font-mono tracking-wide;
+  }
+  
+  .terminal-header {
+    @apply font-mono;
+  }
+  
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(239, 68, 68, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(239, 68, 68, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .text-accent-red {
+    color: #ef4444;
+  }
+  
+  .bg-accent-red {
+    background-color: #ef4444;
+  }
+}
+
+@layer utilities {
+  .blur-bg {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .font-montserrat {
+    font-family: 'Montserrat', Inter, Arial, sans-serif;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+} 
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, #ef4444 60%, transparent 100%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 0 16px #ef444488;
+}
+
+.custom-cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  background: radial-gradient(circle, #ef4444 20%, transparent 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: background 0.3s, transform 0.2s;
+  opacity: 0.3;
+} 
